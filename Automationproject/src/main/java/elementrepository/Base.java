@@ -9,19 +9,18 @@ public class Base {
 	public void initialiseBrowser() {
 		driver = new ChromeDriver();
 		driver.get("https://selenium.qabible.in/index.php");
-		driver.manage().window().maximize();    //to maximize window
+		driver.manage().window().maximize(); // to maximize window
 	}
 
 	public void driverQuitClose() {
-		//driver.close();
-		driver.quit();
+		//driver.close();               //for closing a window
+		driver.quit();                   //for closing all openend windows
 	}
+
 	public static void main(String[] args) {
 
 		Base obj = new Base();
 		obj.initialiseBrowser();
 		obj.driverQuitClose();
-
+      }
 	}
-
-}

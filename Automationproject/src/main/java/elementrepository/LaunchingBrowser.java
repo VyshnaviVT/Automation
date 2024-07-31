@@ -9,11 +9,11 @@ public class LaunchingBrowser {
 
 	public static void main(String[] args) {
 
-		WebDriver driver=new ChromeDriver();  //chrome browser launching
-		driver.get("https://selenium.qabible.in/index.php"); 
-		
-		// WebDriver driver=new EdgeDriver();
-		//WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();            // chrome browser launching
+		driver.get("https://selenium.qabible.in/index.php");    //opening a website link
+
+		// WebDriver driver=new EdgeDriver();            //Edge browser launching
+		// WebDriver driver = new FirefoxDriver();      //Firefox browser launching
 	}
 
 }
