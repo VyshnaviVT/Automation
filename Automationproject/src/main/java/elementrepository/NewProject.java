@@ -1,7 +1,13 @@
 package elementrepository;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class NewProject extends Base {
 	
@@ -9,7 +15,10 @@ public class NewProject extends Base {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
 		WebElement message=driver.findElement(By.id("single-input-field"));
 		message.sendKeys("Good morning");
+		//explicit wait
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement clickbutton=driver.findElement(By.id("button-one"));
+		wait.until(ExpectedConditions.elementToBeClickable(clickbutton));
 		clickbutton.click();
 		}
 	
