@@ -22,7 +22,7 @@ public class Selectclass {
 			
 			select.selectByValue("python");
 			
-		/	WebElement element=select.getAllSelectedOptions();
+		//	WebElement element=select.getAllSelectedOptions();
 			
 		}
 	public static void main(String[] args) {

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 public class Locators extends Base {
 
 	public void id() {
-      WebElement elementname = driver.findElement(By.id("single-input-field")); // to find an element using id
+		WebElement elementname = driver.findElement(By.id("single-input-field")); // to find an element using id
 
 	}
 

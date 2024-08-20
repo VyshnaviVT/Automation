@@ -6,10 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class NewProject extends Base {
+public class Wait extends Base {
 	
 	public void input() {
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
@@ -36,7 +35,7 @@ public class NewProject extends Base {
 	
 
 	public static void main(String[] args) {
-		NewProject obj=new NewProject();
+		Wait obj=new Wait();
 		obj.initialiseBrowser();
 		obj.input();
 		obj.sum();
